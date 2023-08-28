@@ -1,0 +1,31 @@
+Bir alısveris sepeti uygulaması
+Basit bir online alışveriş sepeti uygulamasının Spring MVC ile geliştirilen Dynamic Web Application dur.
+
+    #ANA SAYFA:
+     Uygulama baslığı içermeli ve 3 buton tasarlanmalı
+    --> bir müşteri hizmetleri mesajı: Help
+    --> günün fırsat urunleri : Special Deals For You
+    --> sepet işlemleri : My Cart
+
+    #Help sayfası
+    sadece müşteri hizmetleri mesajını içerir
+
+    #Special Deals For You  sayfası
+    Db de kayıtlı fırsat urunleri listesini gösterir. Urunlerin tüm fieldlarını göstermelidir.
+    her urunun sepete ekle butonu bulundurmalıdır
+
+    #My Cart sayfası
+    kullanıcı istediği urun bilgilerini girerek urun ekleyebilir, eklediği tüm urunleri listeyebilir,
+    sepeti onaylayabilir olmalıdır.. ayrıca bu sayfadan ana sayfaya geri bir dönüş planlanmalıdır.
+    3 buton tasarlanabilir
+    --> ürün ekleme için:  Add Product
+    --> sepet onayı için: Confirm Cart ( burada link bize bir onay mesajı verebilir ve ilgili sepet sıfırlanır.)
+    --> ana ekrana dönüş: Home Page
+
+    #DOMAIN tavsiyesi
+    --> Product: name, brand, color fieldlarını sahip olmalı
+    --> TodaysDeals: id ve product (injection)
+    --> Cart: id, quantity, cargo ve product (injection)
+    NOTE: burada cargo için ENUM yapısı kurgulanabilir.. 
+
+
